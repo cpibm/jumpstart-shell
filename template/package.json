@@ -1,0 +1,27 @@
+{
+	"name": "",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "bash dojo-helper.sh",
+		"test:watch": "nodemon --quiet --ext js --watch ./ --exec bash dojo-helper.sh --delay 2",
+		"test:coverage": "jest --collectCoverage --verbose",
+		"lint": "eslint \"**/*.js\" --ignore-pattern node_modules/",
+		"lint:fix": "eslint \"**/*.js\" --fix --ignore-pattern node_modules/"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"jest": {
+		"testEnvironment": "node",
+		"coveragePathIgnorePatterns": [
+			"/node_modules/"
+		]
+	},
+	"author": "",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {}
+}
